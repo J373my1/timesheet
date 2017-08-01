@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Timesheet</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container"> 
+	<div class="jumbotron">	
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Timesheet</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container">
+  <h2 class="text-center">Current Employees</h2>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Employee Name</th>
+        <th>Role</th>
+        <th>Start Date</th>
+        <th>Months Worked</th>
+        <th>Monthly Rate</th>
+        <th>Total Billed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>       
+        <td id="name-input"></td>
+        <td id="role-input"></td>
+        <td id="date-input"></td>
+        <td> </td>
+        <td id="rate-input"></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container" class="form-control">
+  <h2 class="text-center">Add Employees</h2>            
+  <!-- <table class="table table-bordered" > -->
+    
+    <div class="form-group row">
+  <label for="example-text-input" class="col-sm-2 col-form-label">Name</label>
+  <div class="col-md-8">
+    <input class="form-control" type="text" value="Name" id="name-input">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-search-input" class="col-sm-2 col-form-label">Role</label>
+  <div class="col-md-8">
+    <input class="form-control" type="search" value="Role" id="role-input">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-date-input" class="col-sm-2 col-form-label">Start Date</label>
+  <div class="col-md-8">
+    <input class="form-control" type="date" value="2011-08-19" id="date-input">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-email-input" class="col-sm-2 col-form-label" id="MonthlyRate">Monthly Rate</label>
+  <div class="col-md-8">
+    <input class="form-control" type="text" value="Monthly Rate" id="rate-input">
+  </div>
+</div>
+
+<button type="submit" id="submit">Submit</button>    
+
+	
+</body>
+</html>
